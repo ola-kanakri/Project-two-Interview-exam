@@ -20,8 +20,7 @@ else
 
 btn.onclick = function showAnswers()
 {
-    ans.style.display="block";
-
+     ans.style.display="table";
 
 }
 
