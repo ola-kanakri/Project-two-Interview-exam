@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  display: flex;
+  justify-content: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card #pass , .card #fail
+{font-weight: bold; display:none;}
+
+/*****************************************************************************/
+
+
+
+.button1 {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 70px;
+  background-color: #009344;
+
+
+}
+#ans_btn
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;  
+}
+
+#logout
+{
+  display: flex;
+  justify-content: right;
+  margin: 15px;
+  
+}
+
+.logout_btn
+{
+  background-color: aquamarine;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 70px;
+  margin-top: 5px;
+  
+}
+
+/***************************************************************************/
+
+
+table {
+  border-collapse: collapse;
+ 
+   display: none; 
+
+   width: 100% ;
+
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+ 
+}
+
+/* th, td, tr{
+  min-width: 300wh ;
+
+} */
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #193826;
+  color: white;
+}
+/***************************************************************************/
+/* Responsive columns */
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 22px;
+  }
+
+
+} */

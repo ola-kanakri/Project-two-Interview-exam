@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Page</title>
+
+  <link rel="stylesheet" href="Result_page.css">
+</head>
+<body>
+
+  <div id="logout">
+    <button class="button logout_btn">logout</button>
+  </div>
+  
+<h2>Full stack developer quiz</h2><br>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Result:</h3>
+      <p>Correct Answers: </p>
+      <p>Wrong Answers: </p>
+
+      <p id="pass">“Congratulation, we will arrange with you the Second interview”</p>
+      <p id="fail">“Unfortunately, you did not fulfill our requirements, Good Luck”</p>
+    </div>
+  </div>
+
+  <div id="ans_btn">
+  <button class="button button1">Check your answers</button>
+  </div>
+
+
+
+  <table id="ans_table" style="width: 100%;">
+    <tr>
+      <th>Question</th>
+      <th>Your Answer</th>
+      <th>Correct Answer</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+  </tr>
+  </table>
+
+
+<script src="Result_page.js"></script>
+  
+</body>
+</html>
