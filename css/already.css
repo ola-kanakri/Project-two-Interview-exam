@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    color:black;
+    padding: 15px;
+}
+.result{
+    font-size: larger;
+    font-style: italic;
+}
+
+.bt{
+    width: 150px;
+    height: 40px;
+    background-color: #FF7900;
+    font-size: large;
+}
+#d{
+    font-size: large;
+}
