@@ -1,4 +1,6 @@
+
 var id = localStorage.getItem("user_id")
+
 if (id === null) {
     location.href = ("/Index.html")
 }
@@ -44,48 +46,52 @@ else {
             var b1 = document.getElementsByClassName("b")
             var c1 = document.getElementsByClassName("c")
             var d1 = document.getElementsByClassName("d")
+
+
             for (i = 0; i < a.answers.length; i++) {
                 if (a.answers[i] == "a") {
                     a1[i].style.backgroundColor = "#ff6c6c"
                     a1[i].style.color = "white"
-                    a1[i].innerHTML += "  your anwser "
+                   // a1[i].innerHTML += "    your anwser "
                 }
                 if (a.answers[i] == "b") {
                     b1[i].style.backgroundColor = "#ff6c6c"
                     b1[i].style.color = "white"
-                    b1[i].innerHTML += "  your anwser "
+                   // b1[i].innerHTML += "    your anwser "
                 }
                 if (a.answers[i] == "c") {
                     c1[i].style.backgroundColor = "#ff6c6c"
                     c1[i].style.color = "white"
-                    c1[i].innerHTML += "  your anwser "
+                   // c1[i].innerHTML += "    your anwser "
                 }
                 if (a.answers[i] == "d") {
                     d1[i].style.backgroundColor = "#ff6c6c"
                     d1[i].style.color = "white"
-                    d1[i].innerHTML += "  your anwser "
+                   // d1[i].innerHTML += "    your anwser "
                 }
             }
+
             for (i = 0; i < a.answers.length; i++) {
+
                 if (a2[i].correct == "a") {
                     a1[i].style.backgroundColor = "#43d843"
                     a1[i].style.color = "white"
-                    a1[i].innerHTML += "  correct anwser "
+                  //  a1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "b") {
                     b1[i].style.backgroundColor = "#43d843"
                     b1[i].style.color = "white"
-                    b1[i].innerHTML += "  correct anwser "
+                    //b1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "c") {
                     c1[i].style.backgroundColor = "#43d843"
                     c1[i].style.color = "white"
-                    c1[i].innerHTML += "  correct anwser "
+                  //  c1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "d") {
                     d1[i].style.backgroundColor = "#43d843"
                     d1[i].style.color = "white"
-                    d1[i].innerHTML += "  correct anwser "
+                  //  d1[i].innerHTML += "  correct anwser "
                 }
             }
         }
@@ -95,17 +101,19 @@ else {
 
 
     function home() {
+        
         var id = localStorage.getItem("user_id")
         if (id) {
 
-            localStorage.removeItem("user_id")
-            location.href = "login.html"
+            localStorage.removeItem("user_id");
+            location.href = "../Index.html";
+            //location.href = "login.html"
 
         }
-        else {
+        // else {
 
-            location.href = "../Index.html"
+        //     location.href = "../Index.html";
 
-        }
+        // }
     }
 }

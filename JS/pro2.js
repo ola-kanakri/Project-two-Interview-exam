@@ -1,8 +1,4 @@
-var id = localStorage.getItem("user_id")
-if (id !== null) {
-  location.href = "login.html"
-}
-else {
+
 
 
   function user(name, email, password, result, answers) {
@@ -146,38 +142,3 @@ else {
     }
 
   };
-}
-
-/*var check1 = /\b^([A-Z])/g;
-if (check1.test(formdata.pwd) == true) {
-  document.getElementById("3").style.color = "green";
-  document.getElementById("3").innerHTML = "&#10003;";
-} else {
-  document.getElementById("3").style.color = "red";
-  document.getElementById("3").innerHTML = "must begin with capital letter";
-}
-var check2 = /[0-9]/g;
-if (check2.test(formdata.pwd) == true) {
-  document.getElementById("3").style.color = "green";
-  document.getElementById("3").innerHTML = "&#10003;";
-} else {
-  document.getElementById("3").style.color = "red";
-  document.getElementById("3").innerHTML = "one number at least";
-}
-var check3 = /[?=.*[\]\\{}!@#$%^&*]/;
-if (check3.test(formdata.pwd) == true) {
-  document.getElementById("3").style.color = "green";
-  document.getElementById("3").innerHTML = "&#10003;";
-} else {
-  document.getElementById("3").style.color = "red";
-  document.getElementById("3").innerHTML = "add one symbol at least";
-}
-var check4 = formdata.pwd.length < 8;
-if (check4.test(formdata.pwd) == false) {
-  document.getElementById("3").style.color = "green";
-  document.getElementById("3").innerHTML = "&#10003;";
-  erHTML = "";
-} else {
-  document.getElementById("3").style.color = "red";
-  document.getElementById("3").innerHTML = "at least 8 characters";
-}*/
