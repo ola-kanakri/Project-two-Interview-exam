@@ -1,1 +1,4 @@
 https://miro.com/app/board/uXjVOA6SWKA=/
+
+let pattern = /e/;
+let result = pattern.test(text);

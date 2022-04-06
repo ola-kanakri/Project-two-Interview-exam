@@ -13,24 +13,30 @@
 
 <body>
 
-  <div id="logout">
-    <button class="button button1" onclick="home()">logout</button>
+  <div class='parent'>
+    <div class='child'><img id="Page_logo" src="/img/Orange-Emblem.png" width="300px"></div>
+    <div class='child'><button  id="logout_btn" onclick="home()">logout</button></div>
   </div>
-
-  <div class="main"><img src="/img/Orange.png" width="300px" alt=""></div>
+  
 
 
   <div class="row">
     <div class="column">
       <div class="card">
+
         <h3 id="result">Result:</h3>
 
+        
+        <img src="/img/PASS_Logo.png" id="Pass_img"  width="400px" style="display: none;"> 
+        <img src="/img/Failed_Imoji.png" id="Fail_imoji" width="250px" style="display: none;">
+        
 
-        <p id="pass">“Congratulation“, <br> we will arrange with you the Second interview”</p>
-        <hr><br>
+        <p id="pass">“Congratulation“, <br> we will arrange with you the Second interview”</p><br><br><br>
+        <br>
         <p id="fail">“Unfortunately, <br> you did not fulfill our requirements, Good Luck”</p><br><br><br>
-        <div id="ans_btn">
-          <button class="button button1">Check your answers</button>
+       
+        <div id="ans_div">
+          <button id="ans_btn" >Check your answers</button>
         </div>
 
       </div>

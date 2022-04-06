@@ -86,3 +86,80 @@ input:focus {
 span {
     color: #FF7A01;
 }
+
+
+/************************************  Tablet ***************************************/
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+
+    a
+    {
+        font-size: 40px;
+    }
+
+    .contener
+    {
+        display: flex;
+        width:450px;
+        height: 550px;
+
+        margin: 100px auto;
+        
+    }
+
+    .contener img
+    {
+        width: 150px;
+        margin-bottom:30px ;
+
+    }
+
+    #email , #password
+    {
+        width: 400px;
+        margin-bottom:30px ;
+    } 
+
+
+}
+
+
+/************************************** Phone *************************************/
+
+@media screen and (max-width: 480px) 
+{
+    a
+    {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        
+        border-radius: 0;
+    }
+
+    .contener
+    {
+        display: flex;
+        justify-content: center;
+        
+        
+        width:290px;
+        height: 350px;
+
+        margin: 5 auto;
+     
+        
+    }
+
+    .contener img
+    {
+        width: 80px;
+    }
+
+    #email , #password
+    {
+        width: 260px;
+    }    
+
+} 

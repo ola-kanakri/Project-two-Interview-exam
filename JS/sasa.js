@@ -228,8 +228,10 @@ if (id) {
                 currentQuiz++;
 
 
-                if (currentQuiz == 9) {
-                    nextBtn.innerHTML = '<span><b>You have finished Technical quiz ,be ready for English Quiz</b></span>';
+                if (currentQuiz == 10) {
+                   nextBtn.innerHTML = '<span><b>You have finished Technical quiz ,be ready for English Quiz</b></span>';
+
+                   
                 }
                 if (currentQuiz == 14) {
                     nextBtn.innerHTML = '<span><b>You have finished English quiz ,be ready for IQ Quiz</b></span>';

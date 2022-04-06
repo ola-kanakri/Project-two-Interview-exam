@@ -11,31 +11,43 @@ else {
     var a = x1.userdata[id];
     var a2 = x2.q;
     var result = a.result;
+
+
     let f = document.getElementById("fail");
     let p = document.getElementById("pass");
     let btn = document.getElementById("ans_btn");
-    let ans = document.getElementById("ans_table");
-    document.getElementById("result").innerHTML = " Result <br><br>" + "<span>" + result + " out of  20 " + "</span>"
+    let Pass_img = document.getElementById("Pass_img");
+    let Fail_imoji = document.getElementById("Fail_imoji");
+   
 
-    if (result >= 10) {
-        p.style.display = "inline";
+
+    document.getElementById("result").innerHTML = " Result : "  + result + " out of  20 " ;
+
+    if (50 >= 10) {
+        p.style.display = "block";
+        Pass_img.style.display = "inline";
+        
     }
     else {
-        f.style.display = "inline";
+        f.style.display = "block";
+        Fail_imoji.style.display = "inline";
+        
     }
 
 
     /***************************************************************** */
     var op = true;
+
     btn.onclick = function showAnswers() {
         if (op) {
+
             for (let i = 0; i < a2.length; i++) {
                 document.getElementById("card-rev").innerHTML += `<div class="card-rev">
                  <div class="q">${a2[i].question}</div> 
-                 <div class="a">${"a-" + a2[i].a}</div> 
-                 <div class="b">${"b-" + a2[i].b}</div>
-                 <div class="c">${"c-" + a2[i].c}</div> 
-                 <div class="d">${"d-" + a2[i].d}</div> 
+                 <div class="a">${"a. " + a2[i].a}</div> 
+                 <div class="b">${"b. " + a2[i].b}</div>
+                 <div class="c">${"c. " + a2[i].c}</div> 
+                 <div class="d">${"d. " + a2[i].d}</div> 
                  
                  </div>`
             }
