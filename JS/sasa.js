@@ -90,7 +90,7 @@ if (id) {
                 correct: "b",
             },
             {
-                question: "1-I prefer coffee _____ tea.",
+                question: "1-I prefer coffee ___ tea.",
                 a: "to",
                 b: "than",
                 c: "like",
@@ -98,7 +98,7 @@ if (id) {
                 correct: "a",
             },
             {
-                question: "2-My dog hasn't eaten anything _____ yesterday.",
+                question: "2-My dog hasn't eaten anything ___ yesterday.",
                 a: "for",
                 b: "from",
                 c: "than",
@@ -106,7 +106,7 @@ if (id) {
                 correct: "d",
             },
             {
-                question: "3-If she comes, I _____ call you.",
+                question: "3-If she comes, I ___ call you.",
                 a: "have",
                 b: "would have",
                 c: "would",
@@ -114,7 +114,7 @@ if (id) {
                 correct: "d",
             },
             {
-                question: "4-you look absolutely _____.",
+                question: "4-you look absolutely ___.",
                 a: "beautiful",
                 b: "beauty",
                 c: "beautifully",
@@ -122,7 +122,7 @@ if (id) {
                 correct: "a",
             },
             {
-                question: "5-Do you _____ chocolate milk ?",
+                question: "5-Do you ___ chocolate milk ?",
                 a: "like",
                 b: "likes",
                 c: "liking",
@@ -182,6 +182,9 @@ if (id) {
         const c_text = document.getElementById('c_text');
         const d_text = document.getElementById('d_text');
         const nextBtn = document.getElementById('submit');
+        const finish = document.getElementById('finish');
+        const start =document.getElementById('st');
+        const letGo =document.getElementById('letGo');
 
         let currentQuiz = 0;
         let score = 0;
@@ -215,6 +218,7 @@ if (id) {
             return answer;
         }
 
+
         nextBtn.addEventListener('click', () => {
             const answer = getSelected();
             if (answer) {
@@ -227,24 +231,53 @@ if (id) {
 
                 currentQuiz++;
 
+             
+                if (currentQuiz == 9) {
 
-                if (currentQuiz == 10) {
-                   nextBtn.innerHTML = '<span><b>You have finished Technical quiz ,be ready for English Quiz</b></span>';
+                    nextBtn.innerText = 'Finish';
 
-                   
+                    start.addEventListener('click', () =>{
+                        quiz.style.display ='block';
+                        letGo.style.display ='none';
+                        
+                    })
+                    
                 }
+                
+
                 if (currentQuiz == 14) {
-                    nextBtn.innerHTML = '<span><b>You have finished English quiz ,be ready for IQ Quiz</b></span>';
+                    nextBtn.innerText = 'Finish';
+
+                    start.addEventListener('click', () =>{
+                        quiz.style.display ='block';
+                        letGo.style.display ='none';
+                        
+                    })
                 }
+                
+              
+
                 if (currentQuiz == 10) {
-                    nextBtn.innerHTML = '<button>Next</button>';
+
+                    quiz.style.display ='none';
+                    letGo.style.display ='block'
+
+                    nextBtn.innerText = 'Next';
                     document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">English Test :</h2>  <img src="../img/eng.jpg" width="150px" height="100px">';
                 }
+                
+                
 
                 if (currentQuiz == 15) {
                     document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">IQ Test :</h2>  <img src="../img/IQ.jpg" width="150px" height="100px">';
-                    nextBtn.innerHTML = '<button>Next</button>';
+                    nextBtn.innerText = 'Next';
+
+                        quiz.style.display ='none';
+                        letGo.style.display ='block';
+                        finish.innerText='You are finish English Quiz ,Be ready to IQ Quiz'
                 }
+
+
                 if (currentQuiz < quizData.length) {
                     loadQuiz();
                 } else {
